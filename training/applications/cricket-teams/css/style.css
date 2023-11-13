@@ -1,0 +1,29 @@
+.input-button{
+    text-align: center;
+}
+
+.input-button input{
+    border: none;
+    background-color: rgb(248, 191, 117);
+    padding: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+input:hover{
+    background-color: rgb(117, 117, 116);
+    color: white;
+}
+.app{
+    font-size: 30px;
+    text-align: center;
+
+}
+.app li{
+    list-style-type: none;
+    color: rgb(252, 134, 88);
+ 
+}
+li:hover{
+    color: rgb(11, 11, 248);
+    cursor: pointer;
+}

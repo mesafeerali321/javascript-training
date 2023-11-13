@@ -1,0 +1,37 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form name="myform" action="#" onsubmit="return submitform()" >
+            <input type="text" placeholder="Name" name="username" /> <br>
+            <input type="text" placeholder="Email" name="useremail" /> <br>
+            <input type="text" placeholder="Message" name="usermessage"/> <br>
+            <input type="submit"/>
+        </form>
+
+        <script>
+            function submitform(){
+                if(document.myform.username.value == ''){
+                    alert('Please enter your name')
+                    return false
+                }
+
+                if(document.myform.useremail.value == ''){
+                    alert('Please enter your email')
+                    return false
+                }
+
+                if(document.myform.usermessage.value == ''){
+                    alert('Please enter your message')
+                    return false
+                }
+                // console.log(document.myform.username.value)
+                // console.log(document.myform.useremail.value)
+                // console.log(document.myform.usermessage.value)
+                // return false
+            }
+            
+        </script>
+    </body>
+</html>

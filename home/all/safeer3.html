@@ -1,0 +1,32 @@
+ <style>
+    #shopName {
+        display: flex;
+        align-items: center;
+        background-color: burlywood;
+        padding: 10px;
+        
+
+    }
+
+    #para {
+        text-align: center;
+        background-color: aquamarine;
+        font-size: 40px;
+        padding: 10px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+</style>
+
+
+<input type="text" id="shopName" onchange="changeMe()"/>
+<p id="para"></p>
+
+<script>
+    function changeMe(){
+    var sName = document.getElementById('shopName').value
+    document.getElementById('para').innerHTML = sName
+    }
+</script>
+
+

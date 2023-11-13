@@ -1,0 +1,51 @@
+<style>
+    .err{
+        color: red;
+    }
+
+    .btn{
+        background-color: rgb(120, 120, 251);
+        color: white;
+        padding: 5px;
+    }
+    form{
+        text-align: center;
+    }
+    #teacherName{
+        background-color: rgb(251, 130, 130);
+        color: black;
+        padding: 5px;
+    }
+    #emailId{
+        background-color: rgb(251, 130, 130);
+        color: black;
+        padding: 5px;
+    }
+</style>
+
+<form onsubmit="return validateForm()">
+    <input type="text" id="teacherName" placeholder="Teacher Name"/>
+    <p id="errorName" class="err"></p>
+    <input type="text" id="emailId" placeholder="Email"/>
+    <p id="errorEmail" class="err"></p>
+    <input type="submit" class="btn" value="Submit"/>
+</form>
+
+<script>
+    function validateForm(){
+        var TName = document.getElementById('teacherName').value
+        var TEmail = document.getElementById('emailId').value
+        if (TName == ''){
+        document.getElementById('errorName').innerHTML = 'Please enter Teacher Name'
+        return false 
+        }else{
+            document.getElementById('errorName').innerHTML = ''
+        }
+        if(TEmail == ''){
+        document.getElementById('errorEmail').innerHTML = 'Please enter Teacher Email'
+        return false
+        }else{
+            document.getElementById('errorEmail').innerHTML = ''
+        }
+    }
+</script>

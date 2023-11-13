@@ -1,0 +1,15 @@
+<input type="text" id="textbox"/>
+<input type="button" onclick="addItem()" value="Add Item"/>
+
+<script>
+    var container = []
+    function addItem(){
+        var inputValue = document.getElementById('textbox').value
+        container.push(inputValue)
+        localStorage.setItem('items', JSON.stringify(container))
+
+        console.log(JSON.parse(localStorage.getItem('items')));
+    }
+    
+    console.log(JSON.parse(localStorage.getItem('items')))
+</script>

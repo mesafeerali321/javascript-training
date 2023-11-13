@@ -1,0 +1,17 @@
+<input type="text" id="inputField"/>
+<p id="para"></p>
+
+<script>
+    var element = document.getElementById('inputField')
+    element.addEventListener('keyup', (e) => {
+
+        if(e.keyCode == 13){
+            // element.value = 'close'
+            // console.log(element.value)
+        var printElement = document.getElementById('para')
+        printElement.innerHTML = element.value
+        }
+ 
+    })
+</script>
+

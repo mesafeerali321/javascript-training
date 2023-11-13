@@ -1,0 +1,30 @@
+<style>
+    input {
+        cursor: pointer;
+        background-color: antiquewhite;
+        border: none;
+        padding: 10px;
+        font-weight: bold;
+    }
+    input:hover {
+        background-color: rgb(245, 196, 132);
+    }
+    .msg {
+        font-size: 30px;
+        background-color: bisque;
+    }
+
+</style>
+
+<input type="button" value="Zafri Details" onclick="clickme(['zafri', 20,])"/>
+<input type="button" value="Safeer Details" onclick="clickme(['safeer', 20,])"/>
+<input type="button" value="Intekhab Details" onclick="clickme(['intekhab', 22,])"/>
+<p id="para" class="msg"></p>
+
+<script>
+    function clickme(a){
+    document.getElementById('para').innerHTML = 'my name is '+ a[0] +' and I am ' + a[1] + ' years old'
+
+    }
+
+</script>

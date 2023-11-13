@@ -1,0 +1,1 @@
+var PakistaniPlayers = [' Babar Azam', ' Shadab Khan', ' Shaheen Afridi', ' Asif Ali', ' Fakhar Zaman', ' Md Amir',' Shoaib Malik', ' Hasan Ali', ' Sarfaraz Ahmed', ' Imad Wasim', ' Md Hafeez']

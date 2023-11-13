@@ -1,0 +1,25 @@
+<style>
+    .main{
+        display: flex;
+    }
+    .main > div {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        margin: 10px;
+    }
+</style>
+
+<div class="main">
+    <div id="item1" onclick="clickme(1)"></div> <!-- Parameter -->
+    <div id="item2" onclick="clickme(2)"></div>
+    <div id="item3" onclick="clickme(3)"></div>
+</div>
+
+<script>
+    function clickme(a){
+        console.log('you have clicked div',a);
+    }
+        
+
+</script>

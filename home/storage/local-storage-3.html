@@ -1,0 +1,7 @@
+<script>
+    var players = ['dhoni','virat','shami']
+
+    localStorage.setItem('players',JSON.stringify (players))
+    
+    console.log(typeof JSON.parse (localStorage.getItem('players')))
+</script>

@@ -1,0 +1,28 @@
+<style>
+    #fileName {
+        display: flex;
+        text-align: center;
+        background-color: cadetblue;
+        padding: 10px;
+    }
+
+    #head {
+        text-align: center;
+        background-color: rgb(125, 128, 128);
+        color: rgb(250, 249, 248);
+        font-size: 50px;
+        padding: 10px;
+        text-transform: uppercase;
+    }
+</style>
+
+
+<input type="text" id="fileName" onmouseover="mousehover()"/>
+<h1 id="head"></h1>
+
+<script>
+    function mousehover() {
+        var fName = document.getElementById('fileName').value
+        document.getElementById('head').innerHTML = fName
+    }
+</script>

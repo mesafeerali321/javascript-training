@@ -1,0 +1,50 @@
+<style>
+    .inputtext {
+        text-align: center;
+    }
+    #para {
+        text-align: center;
+        font-size: 50px;
+        color: blue;
+        background-color: bisque;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    .inputtext #customerName {
+        padding: 10px;
+    }
+
+    .inputtext .button {
+        background-color: chocolate;
+        padding: 10px;
+        border: unset;
+        font-size: 15px; 
+        text-transform: uppercase;  
+    }
+    #head {
+        text-align: center;
+        color: crimson;
+        background-color: rgb(248, 248, 149);
+        padding: 5px;
+    }
+</style>
+
+<h1 class="inputtext">
+<input type="text" id="customerName" placeholder="Enter Customer Name"/>
+<input type="button" value="Submit" class="button" onclick="clickme()"/>
+</h1>
+<p id="para"></p>
+<h2 id="head"></h2>
+
+
+<script>
+    function clickme(){
+        var myvalue = document.getElementById('customerName').value 
+        document.getElementById('para').innerHTML = myvalue
+        document.getElementById('head').innerHTML = myvalue
+    }
+
+
+</script>

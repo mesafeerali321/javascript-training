@@ -1,0 +1,54 @@
+<div class="head">
+    <h1>ToDo List</h1>
+</div>
+<input type="text" id="itemInputField" placeholder="Add a item"/>
+<input type="button" onclick="addItem()" value="ADD ITEM" />
+
+<ul id="item-list"></ul>
+
+<script>
+    function addItem(){
+        // getting input value
+        let inputElem = document.getElementById('itemInputField')
+        let elemValue = inputElem.value;
+
+        // creating li element so that we can insert li and value in 'item-list'
+        let liElem = document.createElement('li')
+        liElem.textContent = elemValue
+
+        // creating a element
+        let aElem = document.createElement('a')
+        aElem.href = 'javascript:void(0)'
+        aElem.textContent = 'X'
+        aElem.className = 'cross-icon'
+        liElem.appendChild(aElem)
+        
+        // printing input value in 'item-list'
+        let ulElem = document.getElementById('item-list')
+        ulElem.appendChild(liElem)
+    }
+
+    // removing specific li element
+
+    let ulElem = document.getElementById("item-list")
+    ulElem.addEventListener('click', (e) => {
+        var target = e.target  //a
+        var parent = target.parentNode  //li
+        parent.remove()  //li is remove now
+    })
+</script>
+
+<style>
+    #item-list{
+        text-align: center;
+        list-style-type: none;
+    }
+    li{
+        font-size: 25px;
+        color: aqua;
+    }
+    .cross-icon{
+        margin-left: 100px;
+        text-decoration: none;
+    }
+</style>

@@ -1,0 +1,57 @@
+<!-- <style>
+    .box {
+        height: 100px;
+        width: 100px;
+        border: 1px solid black;
+    }
+</style>
+
+<div 
+class="box" 
+id="fakeid" 
+onclick ="doYellow()"
+onmouseleave ="prevColor()"
+onmouseenter="dobBlack()"
+></div>
+
+<script>
+    function doYellow() {
+        document.getElementById('fakeid').style.backgroundColor = 'yellow'
+    }
+    function prevColor() {
+        document.getElementById('fakeid').style.backgroundColor = 'white'
+    }
+    function dobBlack() {
+        document.getElementById('fakeid').style.backgroundColor = 'black'
+    }
+</script> -->
+
+
+<style>
+    .head {
+        height: 200px;
+        width: 200px;
+        border: 2px solid black;
+    }
+</style>
+
+<div 
+class="head"
+id="mainid" 
+onmouseenter="doBrown()"
+onmouseleave="doYellow()"
+onclick="doRed()"
+></div>
+
+<script>
+    function doBrown() {
+    document.getElementById('mainid').style.backgroundColor = 'brown'
+    }
+    function doYellow() {
+        document.getElementById('mainid').style.backgroundColor = 'yellow'
+    }
+    function doRed() {
+        document.getElementById('mainid').style.backgroundColor = 'red'
+    }
+</script>
+

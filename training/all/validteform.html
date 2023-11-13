@@ -1,0 +1,35 @@
+
+<style>
+    .error{
+        color: red;
+    }
+</style>
+<form onsubmit="return validateform()">
+    <input type="text" id="teacherName" />
+    <p id = 'error' class="error"></p>
+    <input type="text" id="teacherEmail" />
+    <p id="errorEmail" class="error"></p>
+    <input type="submit" value="Submit" />
+</form>
+
+<script>
+    function validateform(){
+       var tname = document.getElementById('teacherName').value
+       var tEmail = document.getElementById('teacherEmail').value
+       
+       if(tname == ''){
+        // alert('please enter teacher name')
+         document.getElementById('error').innerHTML = 'Please enter teacher name'
+        return false
+       }else{
+        document.getElementById('error').innerHTML = ''
+       }
+       if(tEmail == ''){
+        document.getElementById('errorEmail').innerHTML = 'Please enter teacher email'
+        return false
+       }else{
+        document.getElementById('errorEmail').innerHTML = ''
+       }
+       
+    }
+</script>

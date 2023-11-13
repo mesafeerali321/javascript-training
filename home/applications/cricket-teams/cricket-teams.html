@@ -1,0 +1,57 @@
+<style>
+    input {
+        background-color: rgb(248, 215, 172);
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        font-weight: bold;
+    }
+    input:hover {
+        background-color: rgb(249, 163, 58);
+    }
+    .head {
+        color: rgb(80, 6, 254);
+        font-weight: bold;
+        margin-left: 5%;
+    }
+    .msg {
+        color: rgb(3, 156, 164);
+        font-size: 20px;
+        margin-left: 10%;
+    }
+</style>
+
+<input type="button" value="India" onclick="clickme(['India Cricket Players ', ' Virat Kohli ', ' Rohit Sharma ', ' R Jadeja ',' H Pandya ', ' KL Rahul ', ' Rishabh Pant ', ' Md Shami ', ' Y Chahal ', ' Kedar Jadhav ', ' Kuldeep Sen ', ' J Bumrah'])"/>
+<input type="button" value="Australia" onclick="clickme(['Australia Cricket Players ', ' David Warner ', ' Marcus Harris ', ' Matt Renshaw ', ' Steven Smith ', ' Travis Head ', ' Usman Khawaja ', ' Michael Neser ', ' Alex Carey ', ' Peter Handscomb ', ' Josh Hazlewood ', ' Lance Morris'])"/>
+<input type="button" value="Pakistan" onclick="clickme(['Pakistan Cricket Players ', ' Babar Azam', ' Shadab Khan', ' Shaheen Afridi', ' Asif Ali', ' Fakhar Zaman', ' Md Amir',' Shoaib Malik', ' Hasan Ali', ' Sarfaraz Ahmed', ' Imad Wasim', ' Md Hafeez'])"/>
+<input type="button" value="England" onclick="clickme(['England Cricket Players ', ' Ben Stokes', ' Jos Buttler', ' Moeen Ali', ' Joe Root', ' Jason Roy', ' Mark Wood', ' Eoin Morgan', ' Tom Curran', ' Chris Woakes', ' Chris Jordan', ' Will Jacks'])"/>
+
+<h1 id="heading" class="head"></h1>
+<p id="para1" class="msg"></p>
+<p id="para2" class="msg"></p>
+<p id="para3" class="msg"></p>
+<p id="para4" class="msg"></p>
+<p id="para5" class="msg"></p>
+<p id="para6" class="msg"></p>
+<p id="para7" class="msg"></p>
+<p id="para8" class="msg"></p>
+<p id="para9" class="msg"></p>
+<p id="para10" class="msg"></p>
+<p id="para11" class="msg"></p>
+
+<script>
+    function clickme(a) {
+        document.getElementById('heading').innerHTML = a[0]
+        document.getElementById('para1').innerHTML = 1+a[1]
+        document.getElementById('para2').innerHTML = 2+a[2]
+        document.getElementById('para3').innerHTML = 3+a[3]
+        document.getElementById('para4').innerHTML = 4+a[4]
+        document.getElementById('para5').innerHTML = 5+a[5]
+        document.getElementById('para6').innerHTML = 6+a[6]
+        document.getElementById('para7').innerHTML = 7+a[7]
+        document.getElementById('para8').innerHTML = 8+a[8]
+        document.getElementById('para9').innerHTML = 9+a[9]
+        document.getElementById('para10').innerHTML = 10+a[10]
+        document.getElementById('para11').innerHTML = 11+a[11]
+    }
+</script>

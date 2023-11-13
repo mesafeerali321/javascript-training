@@ -1,0 +1,1 @@
+var EnglishPlayers = [' Ben Stokes', ' Jos Buttler', ' Moeen Ali', ' Joe Root', ' Jason Roy', ' Mark Wood', ' Eoin Morgan', ' Tom Curran', ' Chris Woakes', ' Chris Jordan', ' Will Jacks']

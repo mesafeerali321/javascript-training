@@ -1,0 +1,1 @@
+var AustralianPlayers = [' David Warner ', ' Marcus Harris ', ' Matt Renshaw ', ' Steven Smith ', ' Travis Head ', ' Usman Khawaja ', ' Michael Neser ', ' Alex Carey ', ' Peter Handscomb ', ' Josh Hazlewood ', ' Lance Morris']

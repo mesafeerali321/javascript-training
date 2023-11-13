@@ -1,0 +1,17 @@
+<input type="text" id="textbox" />
+<input type="button" onclick="saveValue()" value="Save" />
+<p id="para"></p>
+<script>
+    function saveValue() {
+        var inputvalue = document.getElementById('textbox').value
+        sessionStorage.setItem('value', inputvalue)
+        getValue()
+    }
+    getValue()
+
+    function getValue() {
+        var pr = document.getElementById('para')
+        var sessionvalue = sessionStorage.getItem('value')
+        pr.innerHTML = sessionvalue
+    }
+</script>

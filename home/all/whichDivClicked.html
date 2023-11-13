@@ -1,0 +1,31 @@
+<style>
+    .main {
+        display: flex;
+    }
+    .main > div {
+        height: 50px;
+        width: 50px;
+        background-color: rgb(250, 15, 176);
+        margin: 10px;
+    }
+    .pr {
+        color: rgb(91, 9, 255);
+        margin-top: 10%;
+        font-size: 40px;
+    }
+</style>
+
+<div class="main">
+    <div onclick="clickme(1)"></div>
+    <div onclick="clickme(2)"></div>
+    <div onclick="clickme(3)"></div>
+    <div onclick="clickme(4)"></div>
+    <div onclick="clickme(5)"></div>
+    <p id="para" class="pr"></p>
+</div>
+
+<script>
+    function clickme(a){
+        document.getElementById('para').innerHTML = 'You have clicked Div '+ a
+    }
+</script>

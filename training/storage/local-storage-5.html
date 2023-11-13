@@ -1,0 +1,9 @@
+<script>
+    var students = {
+        name: 'zafri',
+       Fname: 'zeeshan',
+        Mname: 'labi'
+    }
+    localStorage.setItem('students',JSON.stringify(students))
+    console.log(typeof JSON.parse(localStorage.getItem('students')))
+</script>

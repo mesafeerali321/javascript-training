@@ -1,0 +1,66 @@
+<html>
+    <body>
+        <form name="myform" action="#" onsubmit="return submitform()">
+            <input type="text" placeholder="Name" name="uname"/> <br>
+            <input type="text" placeholder="Email" name="uemail"/> <br>
+            <input type="text" placeholder="Contact No" name="ucontact"/> <br>
+            Select Your Gender :<br>
+            <input type="radio" name="ugender"/>Male
+            <input type="radio" name="ugender"/>Female <br>
+            <textarea placeholder="Address" name="uaddress"></textarea> <br>
+            Select Your Hobby :<br>
+            <input type="checkbox" name="uhobby[]"/>Cricket
+            <input type="checkbox" name="uhobby[]"/>Football
+            <input type="checkbox" name="uhobby[]"/>Tennis <br>
+            Fill Your DOB :<br>
+            <input type="date" name="udob"/> <br>
+            <select name="country">
+                <option value="india">India</option>
+                <option value="england">England</option>
+                <option value="china">China</option>
+                <option value="bangladesh">Bangladesh</option>
+            </select> <br>
+
+            <input type="Submit"/>
+        </form>
+
+
+        <script>
+            function submitform(){
+                if(document.myform.uname.value == ''){
+                    alert('Please enter your name')
+                    return false
+                }
+                if(document.myform.uemail.value == ''){
+                    alert('Please enter your email')
+                    return false
+                }
+                if(document.myform.ucontact.value == ''){
+                    alert('Please enter your contact No')
+                    return false
+                }
+                if(document.myform.ugender.value == ''){
+                    alert('Please select your gender')
+                    return false
+                }
+                if(document.myform.uaddress.value == ''){
+                    alert('Please enter your address')
+                    return false
+                }
+                if(document.myform.uhobby.value == ''){
+                    alert('Please select at least one Hobby')
+                    return false
+                }
+                if(document.myform.udob.value == ''){
+                    alert('Please Fill your Date of Birth')
+                    return false
+                }
+                if(document.myform.country.value == ''){
+                    alert('Please enter your country')
+                    return false
+                }
+
+            }
+        </script>
+    </body>
+</html>

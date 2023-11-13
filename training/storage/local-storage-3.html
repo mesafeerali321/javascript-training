@@ -1,0 +1,31 @@
+<input type="text" id="textbox" />
+<input type="button" onclick="saveValue()" value="Save" />
+<input type="button" onclick="removeValue()" value="Remove">
+<input type="button" onclick="removeAllValue()" value="Remove All">
+<p id="para"></p>
+<script>
+    function saveValue() {
+        var inputvalue = document.getElementById('textbox').value
+        localStorage.setItem('value', inputvalue)
+        getValue()
+    }
+    getValue()
+
+    function getValue() {
+        var pr = document.getElementById('para')
+        var localvalue = localStorage.getItem('value')
+        pr.innerHTML = localvalue
+    }
+
+    function removeValue() {
+        localStorage.removeItem('value')
+        var pr = document.getElementById('para')
+        pr.innerHTML =''
+    }
+
+    function removeAllValue(){
+        localStorage.clear()
+        var pr = document.getElementById('para')
+        pr.innerHTML =''
+    }
+</script>
