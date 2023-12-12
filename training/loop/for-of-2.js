@@ -4,4 +4,8 @@ let obj = {
     age: 21
 }
 
-console.log(Object.entries(obj));
+ Object.entries(obj);
+
+for(let i of obj){
+    console.log(i)
+}
