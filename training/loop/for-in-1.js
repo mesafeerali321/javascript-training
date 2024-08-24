@@ -5,5 +5,5 @@ let obj = {
 }
 
 for(let i in obj) {
-    console.log(obj[i]) //this loop is use to itrate the element object or array
+    console.log(obj[i])   //this loop is use to itrate the element object or array
 }

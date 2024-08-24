@@ -8,6 +8,10 @@ let arr = [5, 7, 3, 2, 10]
 // 4
 // 20
 
-arr.map(function(multiply) {
-    console.log(multiply * 2)
-})
+
+
+// arr.map(function(multiply) {
+//     console.log(multiply * 2)
+// })
+
+arr.map(multi => console.log(multi * 2))

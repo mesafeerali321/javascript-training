@@ -14,4 +14,6 @@ let arr = [2, 4, 10, 3, 1]
 //     console.log(value, key)
 // })
 
+
+
 arr.map((value, key) => console.log(value, key))

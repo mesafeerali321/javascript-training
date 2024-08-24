@@ -1,0 +1,21 @@
+<script>
+    let ary = [
+        ["zaf", 18, "male", "arts"],
+        ["labib", 20, "male", "sce"],
+        ["mozammil", 19, "male", "btech"],
+        ["saddu", 19, "male", "btech"],
+        ["akash", 19, "male", "btech",]
+    ]
+    // document.write(ary[0][1])
+    document.write("<table border= '1px' cellspacing = '0'>")
+
+    for(let a = 0; a < ary.length; a++ ){
+        document.write("<tr>")
+        for(let b = 0; b < ary[a].length; b++){
+            document.write("<td>" + ary[a][b] + " </td>")
+        }
+        document.write("</tr>")
+    }
+    document.write("</table>")
+
+</script>
