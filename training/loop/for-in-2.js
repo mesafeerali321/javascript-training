@@ -7,6 +7,6 @@ let celebrities = {
 console.log(celebrities['America'])
 
 for(let i in celebrities) {
-   // console.log(i);
+   //console.log(i);
     console.log(celebrities[i])
 }
