@@ -13,4 +13,4 @@ function checkKey(prop){
     return prop in obj ? true : false
 }
 
-console.log(checkKey('name'))
+console.log(checkKey('class'))
